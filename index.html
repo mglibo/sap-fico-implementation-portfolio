@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAP S/4HANA FICO Implementation | NovaTech Industries</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">◆</span> SAP FICO Implementation
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#company" class="nav-link">Company</a></li>
+                <li><a href="#enterprise-structure" class="nav-link">Enterprise Structure</a></li>
+                <li><a href="#fi-config" class="nav-link">FI Config</a></li>
+                <li><a href="#co-config" class="nav-link">CO Config</a></li>
+                <li><a href="#processes" class="nav-link">Business Processes</a></li>
+                <li><a href="#testing" class="nav-link">Testing & Go-Live</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">SAP S/4HANA Implementation Project</span>
+                <h1>End-to-End SAP FICO<br>Implementation</h1>
+                <p class="hero-subtitle">A comprehensive Financial Accounting (FI) and Controlling (CO) implementation for NovaTech Industries GmbH — from blueprint to go-live using SAP Activate methodology.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Month Timeline</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Company Codes</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">SAP Modules</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Business Processes</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#company" class="btn btn-primary">View Project Details</a>
+                    <a href="#about" class="btn btn-outline">About the Consultant</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">📋</div>
+                    <h3>SAP Activate Methodology</h3>
+                    <p>Structured implementation following SAP's best-practice methodology across Discover, Prepare, Explore, Realize, Deploy, and Run phases.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">💰</div>
+                    <h3>Financial Accounting (FI)</h3>
+                    <p>Complete FI configuration including General Ledger, Accounts Payable, Accounts Receivable, Asset Accounting, and Bank Accounting.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">📊</div>
+                    <h3>Controlling (CO)</h3>
+                    <p>Full CO setup covering Cost Element Accounting, Cost Center Accounting, Profit Center Accounting, and Internal Orders.</p>
+                </div>
+                <div class="overview-card">
+                    <div class="card-icon">🔄</div>
+                    <h3>End-to-End Processes</h3>
+                    <p>Integrated business processes — Procure-to-Pay (P2P), Order-to-Cash (O2C), and Record-to-Report (R2R).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Scenario -->
+    <section id="company" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Phase 1: Discover</span>
+                <h2>Company Scenario</h2>
+                <p>Fictional client profile used to demonstrate a realistic SAP S/4HANA FICO implementation.</p>
+            </div>
+
+            <div class="company-profile">
+                <div class="company-header-card">
+                    <div class="company-logo-area">
+                        <div class="company-logo">NT</div>
+                        <div>
+                            <h3>NovaTech Industries GmbH</h3>
+                            <p class="company-tagline">Precision Electronics Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h4>Company Overview</h4>
+                        <table class="info-table">
+                            <tr><td>Industry</td><td>Manufacturing — Industrial Electronics</td></tr>
+                            <tr><td>Founded</td><td>1998, Munich, Germany</td></tr>
+                            <tr><td>Annual Revenue</td><td>€850 Million</td></tr>
+                            <tr><td>Employees</td><td>3,200 globally</td></tr>
+                            <tr><td>Fiscal Year</td><td>January – December (Calendar Year)</td></tr>
+                            <tr><td>Reporting Currency</td><td>EUR (Group Currency)</td></tr>
+                        </table>
+                    </div>
+                    <div class="info-card">
+                        <h4>Global Presence</h4>
+                        <table class="info-table">
+                            <tr><td>Headquarters</td><td>Munich, Germany (DE)</td></tr>
+                            <tr><td>Subsidiary 1</td><td>NovaTech Industries Inc. — Chicago, USA</td></tr>
+                            <tr><td>Subsidiary 2</td><td>NovaTech Industries Ltd. — London, UK</td></tr>
+                            <tr><td>Plants</td><td>4 manufacturing plants across DE, US, UK</td></tr>
+                            <tr><td>Warehouses</td><td>6 distribution centers</td></tr>
+                            <tr><td>Sales Offices</td><td>12 offices globally</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="info-card full-width">
+                    <h4>Project Background & Business Case</h4>
+                    <div class="background-content">
+                        <div class="background-item">
+                            <h5>Current State (AS-IS)</h5>
+                            <ul>
+                                <li>Legacy ERP system (15+ years old) with limited reporting capabilities</li>
+                                <li>Fragmented financial data across 3 subsidiaries with manual consolidation</li>
+                                <li>No real-time cost controlling or profitability analysis</li>
+                                <li>Manual bank reconciliation processes consuming 40+ hours/month</li>
+                                <li>Separate chart of accounts per subsidiary — no standardization</li>
+                            </ul>
+                        </div>
+                        <div class="background-item">
+                            <h5>Future State (TO-BE)</h5>
+                            <ul>
+                                <li>SAP S/4HANA with unified Chart of Accounts across all entities</li>
+                                <li>Real-time financial reporting with SAP Fiori dashboards</li>
+                                <li>Automated bank statement processing and reconciliation</li>
+                                <li>Integrated cost controlling with drill-down profitability analysis</li>
+                                <li>Centralized shared services for AP/AR processing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card full-width">
+                    <h4>Project Timeline — SAP Activate Phases</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker completed"></div>
+                            <div class="timeline-content">
+                                <h5>Discover & Prepare</h5>
+                                <span class="timeline-date">Months 1–2</span>
+                                <p>Project kickoff, team onboarding, scope definition, system provisioning, project governance setup.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker completed"></div>
+                            <div class="timeline-content">
+                                <h5>Explore</h5>
+                                <span class="timeline-date">Months 3–4</span>
+                                <p>Fit-to-standard workshops, business blueprint documentation, gap analysis, process mapping (AS-IS vs TO-BE).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker completed"></div>
+                            <div class="timeline-content">
+                                <h5>Realize</h5>
+                                <span class="timeline-date">Months 5–9</span>
+                                <p>System configuration, unit testing, integration testing, data migration preparation, end-user training material development.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker active"></div>
+                            <div class="timeline-content">
+                                <h5>Deploy</h5>
+                                <span class="timeline-date">Months 10–11</span>
+                                <p>UAT execution, cutover planning, data migration rehearsals, end-user training, production system prep.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h5>Run</h5>
+                                <span class="timeline-date">Month 12+</span>
+                                <p>Go-live, hypercare support, issue resolution, performance monitoring, knowledge transfer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Structure -->
+    <section id="enterprise-structure" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Phase 2: Explore</span>
+                <h2>Enterprise Structure</h2>
+                <p>Organizational units configured in SAP to represent NovaTech's corporate hierarchy.</p>
+            </div>
+
+            <div class="structure-diagram">
+                <div class="diagram-level level-1">
+                    <div class="diagram-node node-client">
+                        <span class="node-label">Client</span>
+                        <span class="node-value">100 — NovaTech Group</span>
+                    </div>
+                </div>
+                <div class="diagram-connector"></div>
+                <div class="diagram-level level-2">
+                    <div class="diagram-node node-ccode">
+                        <span class="node-label">Company Code</span>
+                        <span class="node-value">NT01 — Germany</span>
+                    </div>
+                    <div class="diagram-node node-ccode">
+                        <span class="node-label">Company Code</span>
+                        <span class="node-value">NT02 — USA</span>
+                    </div>
+                    <div class="diagram-node node-ccode">
+                        <span class="node-label">Company Code</span>
+                        <span class="node-value">NT03 — UK</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="org-units">Organizational Units</button>
+                    <button class="tab-btn" data-tab="fi-structure">FI Structure</button>
+                    <button class="tab-btn" data-tab="co-structure">CO Structure</button>
+                </div>
+
+                <div class="tab-content active" id="org-units">
+                    <div class="config-table-wrapper">
+                        <table class="config-table">
+                            <thead>
+                                <tr>
+                                    <th>Org Unit</th>
+                                    <th>Key</th>
+                                    <th>Description</th>
+                                    <th>Assignment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Client</td><td>100</td><td>NovaTech Industries Group</td><td>—</td></tr>
+                                <tr><td>Company Code</td><td>NT01</td><td>NovaTech Industries GmbH (DE)</td><td>Client 100</td></tr>
+                                <tr><td>Company Code</td><td>NT02</td><td>NovaTech Industries Inc. (US)</td><td>Client 100</td></tr>
+                                <tr><td>Company Code</td><td>NT03</td><td>NovaTech Industries Ltd. (UK)</td><td>Client 100</td></tr>
+                                <tr><td>Business Area</td><td>BA01</td><td>Electronics Manufacturing</td><td>Cross-Company</td></tr>
+                                <tr><td>Business Area</td><td>BA02</td><td>Components & Parts</td><td>Cross-Company</td></tr>
+                                <tr><td>Business Area</td><td>BA03</td><td>Services & Maintenance</td><td>Cross-Company</td></tr>
+                                <tr><td>Plant</td><td>P100</td><td>Munich Plant (HQ)</td><td>NT01</td></tr>
+                                <tr><td>Plant</td><td>P200</td><td>Stuttgart Plant</td><td>NT01</td></tr>
+                                <tr><td>Plant</td><td>P300</td><td>Chicago Plant</td><td>NT02</td></tr>
+                                <tr><td>Plant</td><td>P400</td><td>London Plant</td><td>NT03</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="fi-structure">
+                    <div class="config-table-wrapper">
+                        <table class="config-table">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Key</th>
+                                    <th>Description</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Chart of Accounts</td><td>NTCA</td><td>NovaTech Operative CoA</td><td>Operative — used for daily postings</td></tr>
+                                <tr><td>Chart of Accounts</td><td>NTGR</td><td>NovaTech Group CoA</td><td>Group — used for consolidation</td></tr>
+                                <tr><td>Chart of Accounts</td><td>NTCO</td><td>NovaTech Country CoA</td><td>Country-specific — legal requirements</td></tr>
+                                <tr><td>Fiscal Year Variant</td><td>K4</td><td>Calendar Year (Jan–Dec)</td><td>12 posting periods + 4 special periods</td></tr>
+                                <tr><td>Posting Period Variant</td><td>NT01</td><td>NovaTech PPV</td><td>Controls open/close periods per company code</td></tr>
+                                <tr><td>Field Status Variant</td><td>NT01</td><td>NovaTech FSV</td><td>Controls field display/required/hidden per posting</td></tr>
+                                <tr><td>Tolerance Group</td><td>NT01</td><td>Standard Tolerance</td><td>Posting differences up to €50 / 0.5%</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="co-structure">
+                    <div class="config-table-wrapper">
+                        <table class="config-table">
+                            <thead>
+                                <tr>
+                                    <th>Element</th>
+                                    <th>Key</th>
+                                    <th>Description</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Controlling Area</td><td>NT01</td><td>NovaTech Controlling Area</td><td>Assigned to all 3 company codes</td></tr>
+                                <tr><td>Cost Center Hierarchy</td><td>NTOP</td><td>NovaTech Operations</td><td>Standard hierarchy for all cost centers</td></tr>
+                                <tr><td>Profit Center Hierarchy</td><td>NTPC</td><td>NovaTech Profit Centers</td><td>Standard hierarchy for profit centers</td></tr>
+                                <tr><td>Fiscal Year Variant</td><td>K4</td><td>Calendar Year</td><td>Aligned with FI fiscal year</td></tr>
+                                <tr><td>CO Version</td><td>000</td><td>Plan/Actual</td><td>Default version for planning and actuals</td></tr>
+                                <tr><td>Number Range</td><td>01</td><td>CO Documents</td><td>Internal numbering for CO postings</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FI Configuration -->
+    <section id="fi-config" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Phase 3: Realize</span>
+                <h2>Financial Accounting (FI) Configuration</h2>
+                <p>Detailed configuration of all FI sub-modules with T-codes and IMG paths.</p>
+            </div>
+
+            <div class="module-grid">
+                <!-- General Ledger -->
+                <div class="module-card" id="fi-gl">
+                    <div class="module-header">
+                        <div class="module-icon">📒</div>
+                        <h3>General Ledger (G/L)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Chart of Accounts — NTCA</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>G/L Account</th><th>Description</th><th>Account Group</th><th>P&L / BS</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>100000</td><td>Cash on Hand</td><td>CASH</td><td>Balance Sheet</td></tr>
+                                    <tr><td>110000</td><td>Bank Account — Deutsche Bank</td><td>BANK</td><td>Balance Sheet</td></tr>
+                                    <tr><td>110100</td><td>Bank Account — Chase (USD)</td><td>BANK</td><td>Balance Sheet</td></tr>
+                                    <tr><td>110200</td><td>Bank Account — Barclays (GBP)</td><td>BANK</td><td>Balance Sheet</td></tr>
+                                    <tr><td>140000</td><td>Trade Receivables — Domestic</td><td>RECV</td><td>Balance Sheet</td></tr>
+                                    <tr><td>140100</td><td>Trade Receivables — Foreign</td><td>RECV</td><td>Balance Sheet</td></tr>
+                                    <tr><td>160000</td><td>Raw Materials Inventory</td><td>INVT</td><td>Balance Sheet</td></tr>
+                                    <tr><td>170000</td><td>Fixed Assets — Machinery</td><td>ASST</td><td>Balance Sheet</td></tr>
+                                    <tr><td>200000</td><td>Trade Payables — Domestic</td><td>PAYA</td><td>Balance Sheet</td></tr>
+                                    <tr><td>200100</td><td>Trade Payables — Foreign</td><td>PAYA</td><td>Balance Sheet</td></tr>
+                                    <tr><td>300000</td><td>Share Capital</td><td>EQTY</td><td>Balance Sheet</td></tr>
+                                    <tr><td>310000</td><td>Retained Earnings</td><td>EQTY</td><td>Balance Sheet</td></tr>
+                                    <tr><td>400000</td><td>Revenue — Finished Goods</td><td>REVN</td><td>Profit & Loss</td></tr>
+                                    <tr><td>400100</td><td>Revenue — Services</td><td>REVN</td><td>Profit & Loss</td></tr>
+                                    <tr><td>500000</td><td>Cost of Goods Sold</td><td>COGS</td><td>Profit & Loss</td></tr>
+                                    <tr><td>600000</td><td>Salaries & Wages</td><td>OPEX</td><td>Profit & Loss</td></tr>
+                                    <tr><td>610000</td><td>Rent & Utilities</td><td>OPEX</td><td>Profit & Loss</td></tr>
+                                    <tr><td>620000</td><td>Depreciation Expense</td><td>OPEX</td><td>Profit & Loss</td></tr>
+                                    <tr><td>700000</td><td>Interest Income</td><td>FINA</td><td>Profit & Loss</td></tr>
+                                    <tr><td>710000</td><td>Interest Expense</td><td>FINA</td><td>Profit & Loss</td></tr>
+                                    <tr><td>800000</td><td>Foreign Exchange Gains</td><td>FXGL</td><td>Profit & Loss</td></tr>
+                                    <tr><td>810000</td><td>Foreign Exchange Losses</td><td>FXGL</td><td>Profit & Loss</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Chart of Accounts</strong>
+                                    <code>SPRO → Financial Accounting → G/L Accounting → G/L Accounts → Master Data → Preparations → Edit Chart of Accounts List</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Define Account Groups</strong>
+                                    <code>SPRO → Financial Accounting → G/L Accounting → G/L Accounts → Master Data → Preparations → Define Account Group</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Assign Company Code to Chart of Accounts</strong>
+                                    <code>SPRO → Financial Accounting → G/L Accounting → G/L Accounts → Master Data → Preparations → Assign Company Code to Chart of Accounts</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <strong>Define Retained Earnings Account</strong>
+                                    <code>SPRO → Financial Accounting → G/L Accounting → G/L Accounts → Master Data → Preparations → Define Retained Earnings Account</code>
+                                    <p class="step-note">T-Code: <strong>OB53</strong> — Map P&L statement type accounts to retained earnings account 310000</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">5</span>
+                                <div>
+                                    <strong>Create G/L Account Master Records</strong>
+                                    <code>T-Code: FS00</code>
+                                    <p class="step-note">Create at CoA level first, then extend to each company code with local currency settings.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accounts Payable -->
+                <div class="module-card" id="fi-ap">
+                    <div class="module-header">
+                        <div class="module-icon">📤</div>
+                        <h3>Accounts Payable (AP)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Vendor Account Groups</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Account Group</th><th>Description</th><th>Number Range</th><th>Details</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>VDOM</td><td>Domestic Vendors</td><td>100000–199999</td><td>Local suppliers, standard payment terms</td></tr>
+                                    <tr><td>VFOR</td><td>Foreign Vendors</td><td>200000–299999</td><td>International suppliers, foreign currency</td></tr>
+                                    <tr><td>VOTP</td><td>One-Time Vendors</td><td>300000–399999</td><td>Occasional vendors, CPD account</td></tr>
+                                    <tr><td>VICP</td><td>Intercompany Vendors</td><td>400000–499999</td><td>NovaTech group entities</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Payment Terms</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Key</th><th>Description</th><th>Discount %</th><th>Days</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>NT01</td><td>Net 30</td><td>—</td><td>30 days</td></tr>
+                                    <tr><td>NT02</td><td>2/10 Net 30</td><td>2%</td><td>10 days discount / 30 days net</td></tr>
+                                    <tr><td>NT03</td><td>Net 45</td><td>—</td><td>45 days</td></tr>
+                                    <tr><td>NT04</td><td>Net 60</td><td>—</td><td>60 days</td></tr>
+                                    <tr><td>NT05</td><td>Due Immediately</td><td>—</td><td>0 days</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Vendor Account Groups</strong>
+                                    <code>SPRO → Financial Accounting → AP → Vendor Accounts → Master Data → Preparations → Define Account Groups with Screen Layout (Vendors)</code>
+                                    <p class="step-note">T-Code: <strong>OBD3</strong></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Create Number Ranges for Vendor Accounts</strong>
+                                    <code>T-Code: XKN1</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Define Payment Terms</strong>
+                                    <code>SPRO → Financial Accounting → AP → Vendor Invoices → Define Payment Terms</code>
+                                    <p class="step-note">T-Code: <strong>OBB8</strong></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <strong>Configure Automatic Payment Program</strong>
+                                    <code>T-Code: FBZP</code>
+                                    <p class="step-note">Set up paying company codes, payment methods (check, wire transfer, ACH), bank determination, and house banks.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">5</span>
+                                <div>
+                                    <strong>Create Vendor Master Records</strong>
+                                    <code>T-Code: FK01 (FI only) / XK01 (Central) / BP (S/4HANA Business Partner)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accounts Receivable -->
+                <div class="module-card" id="fi-ar">
+                    <div class="module-header">
+                        <div class="module-icon">📥</div>
+                        <h3>Accounts Receivable (AR)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Customer Account Groups</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Account Group</th><th>Description</th><th>Number Range</th><th>Details</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>CDOM</td><td>Domestic Customers</td><td>500000–599999</td><td>Standard domestic customers</td></tr>
+                                    <tr><td>CFOR</td><td>Foreign Customers</td><td>600000–699999</td><td>Export customers, foreign currency</td></tr>
+                                    <tr><td>COTP</td><td>One-Time Customers</td><td>700000–799999</td><td>Cash sales, CPD account</td></tr>
+                                    <tr><td>CICP</td><td>Intercompany Customers</td><td>800000–899999</td><td>NovaTech group entities</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Dunning Configuration</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Dunning Area</th><th>Level</th><th>Days Overdue</th><th>Action</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>NT01</td><td>Level 1</td><td>14 days</td><td>Friendly reminder letter</td></tr>
+                                    <tr><td>NT01</td><td>Level 2</td><td>30 days</td><td>Formal payment request</td></tr>
+                                    <tr><td>NT01</td><td>Level 3</td><td>60 days</td><td>Final notice — escalation warning</td></tr>
+                                    <tr><td>NT01</td><td>Level 4</td><td>90 days</td><td>Collection agency referral</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Customer Account Groups</strong>
+                                    <code>SPRO → Financial Accounting → AR → Customer Accounts → Master Data → Preparations → Define Account Groups with Screen Layout (Customers)</code>
+                                    <p class="step-note">T-Code: <strong>OBD2</strong></p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Configure Dunning Procedure</strong>
+                                    <code>T-Code: FBMP</code>
+                                    <p class="step-note">Define 4 dunning levels with grace periods, minimum amounts, and dunning charges.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Define Credit Management</strong>
+                                    <code>SPRO → Financial Accounting → AR → Credit Management</code>
+                                    <p class="step-note">Set credit limits per customer, define credit control areas, assign risk categories.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <strong>Create Customer Master Records</strong>
+                                    <code>T-Code: FD01 (FI only) / XD01 (Central) / BP (S/4HANA Business Partner)</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Asset Accounting -->
+                <div class="module-card" id="fi-aa">
+                    <div class="module-header">
+                        <div class="module-icon">🏭</div>
+                        <h3>Asset Accounting (AA)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Asset Classes</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Class</th><th>Description</th><th>Depreciation Key</th><th>Useful Life</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1000</td><td>Buildings & Structures</td><td>LINA</td><td>25 years</td></tr>
+                                    <tr><td>2000</td><td>Machinery & Equipment</td><td>LINA</td><td>10 years</td></tr>
+                                    <tr><td>3000</td><td>Vehicles</td><td>LINA</td><td>5 years</td></tr>
+                                    <tr><td>4000</td><td>IT Equipment & Hardware</td><td>LINA</td><td>3 years</td></tr>
+                                    <tr><td>5000</td><td>Furniture & Fixtures</td><td>LINA</td><td>7 years</td></tr>
+                                    <tr><td>6000</td><td>Intangible Assets (Software)</td><td>LINA</td><td>5 years</td></tr>
+                                    <tr><td>7000</td><td>Assets Under Construction</td><td>0000</td><td>N/A</td></tr>
+                                    <tr><td>8000</td><td>Low-Value Assets</td><td>LINA</td><td>1 year (immediate)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Depreciation Areas</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Area</th><th>Description</th><th>Purpose</th><th>Posting</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>01</td><td>Book Depreciation</td><td>Financial reporting (IFRS/HGB)</td><td>Real-time to G/L</td></tr>
+                                    <tr><td>15</td><td>Tax Depreciation</td><td>Local tax requirements</td><td>Real-time to G/L</td></tr>
+                                    <tr><td>30</td><td>Group Valuation</td><td>IFRS consolidation</td><td>Real-time to G/L</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Chart of Depreciation</strong>
+                                    <code>SPRO → Financial Accounting → Asset Accounting → Organizational Structures → Copy Reference Chart of Depreciation</code>
+                                    <p class="step-note">T-Code: <strong>EC08</strong> — Copy from country-specific template (0DE for Germany)</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Define Asset Classes</strong>
+                                    <code>T-Code: OAOA</code>
+                                    <p class="step-note">Assign G/L accounts, depreciation keys, and useful life defaults per class.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Define Depreciation Keys</strong>
+                                    <code>T-Code: AFAMA</code>
+                                    <p class="step-note">LINA = Straight-line depreciation. Configure calculation methods, period control, and base values.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <strong>Assign G/L Accounts to Asset Classes</strong>
+                                    <code>T-Code: AO90</code>
+                                    <p class="step-note">Map asset acquisition, depreciation, retirement accounts per depreciation area and asset class.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Accounting -->
+                <div class="module-card" id="fi-bank">
+                    <div class="module-header">
+                        <div class="module-icon">🏦</div>
+                        <h3>Bank Accounting</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>House Banks</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Company Code</th><th>House Bank</th><th>Bank Name</th><th>Account ID</th><th>Currency</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>NT01</td><td>DB01</td><td>Deutsche Bank AG</td><td>MAIN</td><td>EUR</td></tr>
+                                    <tr><td>NT01</td><td>DB01</td><td>Deutsche Bank AG</td><td>CLEAR</td><td>EUR</td></tr>
+                                    <tr><td>NT02</td><td>CH01</td><td>JPMorgan Chase</td><td>MAIN</td><td>USD</td></tr>
+                                    <tr><td>NT03</td><td>BC01</td><td>Barclays Bank</td><td>MAIN</td><td>GBP</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Electronic Bank Statement Configuration</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define House Banks and Account IDs</strong>
+                                    <code>T-Code: FI12</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Configure Electronic Bank Statement</strong>
+                                    <code>T-Code: OT83</code>
+                                    <p class="step-note">Map external transaction codes to posting rules for automated reconciliation. Format: MT940 (SWIFT standard).</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Set Up Bank Reconciliation</strong>
+                                    <code>T-Code: FF67 (manual) / FEBAN (electronic)</code>
+                                    <p class="step-note">Automated matching rules: amount, reference number, value date, and business partner.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tax Configuration -->
+                <div class="module-card" id="fi-tax">
+                    <div class="module-header">
+                        <div class="module-icon">📑</div>
+                        <h3>Tax Configuration</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Tax Codes</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Tax Code</th><th>Description</th><th>Rate</th><th>Country</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>V1</td><td>Input Tax — Standard (DE)</td><td>19%</td><td>Germany</td></tr>
+                                    <tr><td>V2</td><td>Input Tax — Reduced (DE)</td><td>7%</td><td>Germany</td></tr>
+                                    <tr><td>A1</td><td>Output Tax — Standard (DE)</td><td>19%</td><td>Germany</td></tr>
+                                    <tr><td>A2</td><td>Output Tax — Reduced (DE)</td><td>7%</td><td>Germany</td></tr>
+                                    <tr><td>V3</td><td>Input Tax — Standard (US)</td><td>Varies by state</td><td>USA</td></tr>
+                                    <tr><td>V4</td><td>Input Tax — Standard (UK)</td><td>20%</td><td>UK</td></tr>
+                                    <tr><td>A4</td><td>Output Tax — Standard (UK)</td><td>20%</td><td>UK</td></tr>
+                                    <tr><td>V0</td><td>Tax Exempt</td><td>0%</td><td>All</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Tax Calculation Procedure</strong>
+                                    <code>SPRO → Financial Accounting → Financial Accounting Global Settings → Tax on Sales/Purchases → Basic Settings → Assign Country to Calculation Procedure</code>
+                                    <p class="step-note">TAXD (Germany), TAXUS (USA), TAXGB (UK)</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Define Tax Codes</strong>
+                                    <code>T-Code: FTXP</code>
+                                    <p class="step-note">Create input/output tax codes with corresponding rates and G/L accounts.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Assign Tax Accounts</strong>
+                                    <code>T-Code: OB40</code>
+                                    <p class="step-note">Map tax codes to G/L accounts for automatic tax posting during document entry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CO Configuration -->
+    <section id="co-config" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Phase 3: Realize</span>
+                <h2>Controlling (CO) Configuration</h2>
+                <p>Management accounting setup for cost tracking, profitability analysis, and internal reporting.</p>
+            </div>
+
+            <div class="module-grid">
+                <!-- Cost Element Accounting -->
+                <div class="module-card" id="co-cea">
+                    <div class="module-header">
+                        <div class="module-icon">🔢</div>
+                        <h3>Cost Element Accounting (CO-OM-CEL)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Primary Cost Elements</h4>
+                        <p class="module-note">In S/4HANA, cost elements are managed directly in the G/L account master (account type: Primary Cost Element / Secondary Cost Element).</p>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Cost Element</th><th>Description</th><th>Category</th><th>CElem Category</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>400000</td><td>Revenue — Finished Goods</td><td>Revenue</td><td>11 (Revenue)</td></tr>
+                                    <tr><td>500000</td><td>Cost of Goods Sold</td><td>Material Costs</td><td>1 (Primary)</td></tr>
+                                    <tr><td>600000</td><td>Salaries & Wages</td><td>Personnel</td><td>1 (Primary)</td></tr>
+                                    <tr><td>610000</td><td>Rent & Utilities</td><td>Operating</td><td>1 (Primary)</td></tr>
+                                    <tr><td>620000</td><td>Depreciation Expense</td><td>Depreciation</td><td>1 (Primary)</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Secondary Cost Elements</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Cost Element</th><th>Description</th><th>CElem Category</th><th>Purpose</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>900000</td><td>Assessment — IT Costs</td><td>42 (Assessment)</td><td>Allocate IT costs to departments</td></tr>
+                                    <tr><td>910000</td><td>Internal Activity Allocation</td><td>43 (Activity Allocation)</td><td>Allocate machine hours, labor</td></tr>
+                                    <tr><td>920000</td><td>Order Settlement</td><td>21 (Settlement)</td><td>Settle internal orders to cost centers</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cost Center Accounting -->
+                <div class="module-card" id="co-cca">
+                    <div class="module-header">
+                        <div class="module-icon">🏢</div>
+                        <h3>Cost Center Accounting (CO-OM-CCA)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Cost Center Hierarchy (NTOP)</h4>
+                        <div class="hierarchy-tree">
+                            <div class="tree-node root">
+                                <span>NTOP — NovaTech Operations (Root)</span>
+                                <div class="tree-children">
+                                    <div class="tree-node">
+                                        <span>MFGR — Manufacturing</span>
+                                        <div class="tree-children">
+                                            <div class="tree-leaf">CC1010 — Production Line A (Munich)</div>
+                                            <div class="tree-leaf">CC1020 — Production Line B (Munich)</div>
+                                            <div class="tree-leaf">CC1030 — Quality Control (Munich)</div>
+                                            <div class="tree-leaf">CC1040 — Production (Chicago)</div>
+                                            <div class="tree-leaf">CC1050 — Production (London)</div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-node">
+                                        <span>ADMN — Administration</span>
+                                        <div class="tree-children">
+                                            <div class="tree-leaf">CC2010 — Executive Management</div>
+                                            <div class="tree-leaf">CC2020 — Finance & Accounting</div>
+                                            <div class="tree-leaf">CC2030 — Human Resources</div>
+                                            <div class="tree-leaf">CC2040 — Legal & Compliance</div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-node">
+                                        <span>SALE — Sales & Distribution</span>
+                                        <div class="tree-children">
+                                            <div class="tree-leaf">CC3010 — Sales — EMEA</div>
+                                            <div class="tree-leaf">CC3020 — Sales — Americas</div>
+                                            <div class="tree-leaf">CC3030 — Marketing</div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-node">
+                                        <span>ITDP — IT Department</span>
+                                        <div class="tree-children">
+                                            <div class="tree-leaf">CC4010 — IT Infrastructure</div>
+                                            <div class="tree-leaf">CC4020 — IT Applications (SAP)</div>
+                                        </div>
+                                    </div>
+                                    <div class="tree-node">
+                                        <span>RESE — Research & Development</span>
+                                        <div class="tree-children">
+                                            <div class="tree-leaf">CC5010 — R&D Electronics</div>
+                                            <div class="tree-leaf">CC5020 — R&D Innovation Lab</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Controlling Area</strong>
+                                    <code>T-Code: OKKP</code>
+                                    <p class="step-note">NT01 controlling area assigned to all 3 company codes. Currency: EUR.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Create Cost Center Standard Hierarchy</strong>
+                                    <code>T-Code: OKEON</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Create Cost Centers</strong>
+                                    <code>T-Code: KS01</code>
+                                    <p class="step-note">Assign each cost center to a hierarchy node, company code, business area, and responsible person.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">4</span>
+                                <div>
+                                    <strong>Define Assessment Cycles</strong>
+                                    <code>T-Code: KSU1</code>
+                                    <p class="step-note">Allocate IT overhead (CC4010, CC4020) to all other departments based on headcount.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profit Center Accounting -->
+                <div class="module-card" id="co-pca">
+                    <div class="module-header">
+                        <div class="module-icon">📈</div>
+                        <h3>Profit Center Accounting (CO-PCA)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Profit Center Structure</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Profit Center</th><th>Description</th><th>Segment</th><th>Company Code</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>PC1000</td><td>Electronics Manufacturing — DE</td><td>ELEC</td><td>NT01</td></tr>
+                                    <tr><td>PC1100</td><td>Components & Parts — DE</td><td>COMP</td><td>NT01</td></tr>
+                                    <tr><td>PC2000</td><td>Electronics Manufacturing — US</td><td>ELEC</td><td>NT02</td></tr>
+                                    <tr><td>PC3000</td><td>Electronics Manufacturing — UK</td><td>ELEC</td><td>NT03</td></tr>
+                                    <tr><td>PC9000</td><td>Corporate / Shared Services</td><td>CORP</td><td>NT01</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Create Profit Center Standard Hierarchy</strong>
+                                    <code>T-Code: KCH1</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Create Profit Centers</strong>
+                                    <code>T-Code: KE51</code>
+                                    <p class="step-note">In S/4HANA, profit centers are mandatory for all G/L postings.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Define Dummy Profit Center</strong>
+                                    <code>T-Code: KE59</code>
+                                    <p class="step-note">Catches postings without profit center assignment — used for exception reporting.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Internal Orders -->
+                <div class="module-card" id="co-io">
+                    <div class="module-header">
+                        <div class="module-icon">📌</div>
+                        <h3>Internal Orders (CO-OM-OPA)</h3>
+                    </div>
+                    <div class="module-body">
+                        <h4>Order Types</h4>
+                        <div class="config-table-wrapper">
+                            <table class="config-table compact">
+                                <thead>
+                                    <tr><th>Order Type</th><th>Description</th><th>Settlement</th><th>Example</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>NT01</td><td>Marketing Campaigns</td><td>Cost Center</td><td>Q1 2024 Trade Show Campaign</td></tr>
+                                    <tr><td>NT02</td><td>Capital Investment</td><td>Fixed Asset</td><td>New CNC Machine Purchase</td></tr>
+                                    <tr><td>NT03</td><td>R&D Projects</td><td>Cost Center / WBS</td><td>Next-Gen Sensor Development</td></tr>
+                                    <tr><td>NT04</td><td>Maintenance Orders</td><td>Cost Center</td><td>Annual Equipment Overhaul</td></tr>
+                                    <tr><td>NT05</td><td>Overhead Absorption</td><td>Cost Center</td><td>Monthly overhead calculation</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>Key Configuration Steps</h4>
+                        <div class="config-steps">
+                            <div class="step">
+                                <span class="step-number">1</span>
+                                <div>
+                                    <strong>Define Order Types</strong>
+                                    <code>T-Code: KOT2</code>
+                                    <p class="step-note">Set number ranges, status management, and settlement profiles per order type.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">2</span>
+                                <div>
+                                    <strong>Define Settlement Profiles</strong>
+                                    <code>SPRO → Controlling → Internal Orders → Actual Postings → Settlement → Create Settlement Profile</code>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step-number">3</span>
+                                <div>
+                                    <strong>Create Internal Orders</strong>
+                                    <code>T-Code: KO01</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Processes -->
+    <section id="processes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Integrated Processes</span>
+                <h2>End-to-End Business Processes</h2>
+                <p>Core business processes configured and tested during the Realize phase.</p>
+            </div>
+
+            <div class="process-accordion">
+                <!-- P2P Process -->
+                <div class="process-item">
+                    <button class="process-header" data-process="p2p">
+                        <div class="process-title">
+                            <span class="process-icon">🔄</span>
+                            <div>
+                                <h3>Procure-to-Pay (P2P)</h3>
+                                <p>End-to-end procurement cycle from purchase requisition to vendor payment</p>
+                            </div>
+                        </div>
+                        <span class="process-toggle">+</span>
+                    </button>
+                    <div class="process-content" id="p2p">
+                        <div class="process-flow">
+                            <div class="flow-step">
+                                <div class="flow-number">1</div>
+                                <div class="flow-details">
+                                    <h4>Purchase Requisition</h4>
+                                    <span class="tcode">T-Code: ME51N</span>
+                                    <p>Department creates purchase requisition → Approval workflow → Released for purchasing.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Impact:</strong> None (commitment only)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">2</div>
+                                <div class="flow-details">
+                                    <h4>Purchase Order</h4>
+                                    <span class="tcode">T-Code: ME21N</span>
+                                    <p>Buyer creates PO referencing PR → Vendor confirmation → Delivery scheduling.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Impact:</strong> Commitment update (if commitment management active)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">3</div>
+                                <div class="flow-details">
+                                    <h4>Goods Receipt</h4>
+                                    <span class="tcode">T-Code: MIGO</span>
+                                    <p>Warehouse confirms receipt of materials against PO.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting:</strong><br>
+                                        Dr. 160000 Raw Materials Inventory<br>
+                                        Cr. 191000 GR/IR Clearing Account
+                                        <br><br>
+                                        <strong>CO Impact:</strong> Cost posted to cost center or order if expense item.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">4</div>
+                                <div class="flow-details">
+                                    <h4>Invoice Verification</h4>
+                                    <span class="tcode">T-Code: MIRO</span>
+                                    <p>AP team enters vendor invoice → 3-way match (PO, GR, Invoice) → Post invoice.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting:</strong><br>
+                                        Dr. 191000 GR/IR Clearing Account<br>
+                                        Dr. 154000 Input Tax (V1 — 19%)<br>
+                                        Cr. 200000 Trade Payables (Vendor)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">5</div>
+                                <div class="flow-details">
+                                    <h4>Payment Run</h4>
+                                    <span class="tcode">T-Code: F110</span>
+                                    <p>Automatic payment program → Payment proposal → Execute → Bank transfer.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting:</strong><br>
+                                        Dr. 200000 Trade Payables (Vendor)<br>
+                                        Cr. 110000 Bank Account (Deutsche Bank)
+                                        <br><br>
+                                        <em>If early payment discount taken (2/10 Net 30):</em><br>
+                                        Dr. 200000 Trade Payables<br>
+                                        Cr. 110000 Bank Account<br>
+                                        Cr. 530000 Cash Discount Received
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- O2C Process -->
+                <div class="process-item">
+                    <button class="process-header" data-process="o2c">
+                        <div class="process-title">
+                            <span class="process-icon">💳</span>
+                            <div>
+                                <h3>Order-to-Cash (O2C)</h3>
+                                <p>Complete sales cycle from customer order to incoming payment</p>
+                            </div>
+                        </div>
+                        <span class="process-toggle">+</span>
+                    </button>
+                    <div class="process-content" id="o2c">
+                        <div class="process-flow">
+                            <div class="flow-step">
+                                <div class="flow-number">1</div>
+                                <div class="flow-details">
+                                    <h4>Sales Order</h4>
+                                    <span class="tcode">T-Code: VA01</span>
+                                    <p>Sales team creates order → Credit check → Availability check → Order confirmation to customer.</p>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">2</div>
+                                <div class="flow-details">
+                                    <h4>Delivery & Goods Issue</h4>
+                                    <span class="tcode">T-Code: VL01N / VL02N</span>
+                                    <p>Create delivery → Pick, pack, ship → Post goods issue.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting (Goods Issue):</strong><br>
+                                        Dr. 500000 Cost of Goods Sold<br>
+                                        Cr. 160000 Finished Goods Inventory
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">3</div>
+                                <div class="flow-details">
+                                    <h4>Billing / Invoicing</h4>
+                                    <span class="tcode">T-Code: VF01</span>
+                                    <p>Create billing document → Automatic FI posting → Send invoice to customer.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting:</strong><br>
+                                        Dr. 140000 Trade Receivables (Customer)<br>
+                                        Cr. 400000 Revenue — Finished Goods<br>
+                                        Cr. 175000 Output Tax (A1 — 19%)
+                                        <br><br>
+                                        <strong>CO Impact:</strong> Revenue posted to profit center PC1000.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">4</div>
+                                <div class="flow-details">
+                                    <h4>Incoming Payment</h4>
+                                    <span class="tcode">T-Code: F-28 / FEBA</span>
+                                    <p>Customer payment received → Match to open invoice → Clear receivable.</p>
+                                    <div class="flow-posting">
+                                        <strong>FI Posting:</strong><br>
+                                        Dr. 110000 Bank Account<br>
+                                        Cr. 140000 Trade Receivables (Customer)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- R2R Process -->
+                <div class="process-item">
+                    <button class="process-header" data-process="r2r">
+                        <div class="process-title">
+                            <span class="process-icon">📊</span>
+                            <div>
+                                <h3>Record-to-Report (R2R)</h3>
+                                <p>Period-end closing activities and financial reporting</p>
+                            </div>
+                        </div>
+                        <span class="process-toggle">+</span>
+                    </button>
+                    <div class="process-content" id="r2r">
+                        <div class="process-flow">
+                            <div class="flow-step">
+                                <div class="flow-number">1</div>
+                                <div class="flow-details">
+                                    <h4>Period-End Closing Checklist</h4>
+                                    <p>Monthly/quarterly closing activities performed in sequence:</p>
+                                    <div class="closing-checklist">
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Run Depreciation</strong> — T-Code: AFAB
+                                                <p>Execute depreciation run for all asset classes across all company codes.</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Cost Center Allocations</strong> — T-Code: KSU5
+                                                <p>Execute assessment cycles to distribute overhead costs.</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Internal Order Settlement</strong> — T-Code: KO88
+                                                <p>Settle completed orders to receivers (cost centers, assets, P&L).</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Foreign Currency Valuation</strong> — T-Code: FAGL_FCV
+                                                <p>Revalue open items in foreign currencies at month-end exchange rates.</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>GR/IR Clearing</strong> — T-Code: F.13
+                                                <p>Analyze and clear GR/IR account — identify mismatches.</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Bank Reconciliation</strong> — T-Code: FEBAN
+                                                <p>Reconcile all bank accounts — resolve unmatched items.</p>
+                                            </div>
+                                        </div>
+                                        <div class="checklist-item">
+                                            <span class="check">&#10003;</span>
+                                            <div>
+                                                <strong>Close Posting Period</strong> — T-Code: OB52
+                                                <p>Close current period, open next period for all company codes.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flow-step">
+                                <div class="flow-number">2</div>
+                                <div class="flow-details">
+                                    <h4>Financial Statements</h4>
+                                    <span class="tcode">T-Code: S_ALR_87012284 (Balance Sheet) / F.01</span>
+                                    <p>Generate financial statements using Financial Statement Version (FSV).</p>
+                                    <div class="flow-posting">
+                                        <strong>Reports Generated:</strong><br>
+                                        • Balance Sheet (per company code & consolidated)<br>
+                                        • Profit & Loss Statement<br>
+                                        • Cash Flow Statement<br>
+                                        • Segment Reporting (by profit center / segment)<br>
+                                        • Trial Balance (T-Code: S_ALR_87012277)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing & Go-Live -->
+    <section id="testing" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Phase 4–5: Deploy & Run</span>
+                <h2>Testing, Cutover & Go-Live</h2>
+                <p>Comprehensive testing strategy and go-live readiness planning.</p>
+            </div>
+
+            <div class="testing-grid">
+                <!-- Test Scripts -->
+                <div class="test-card">
+                    <h3>Unit Test Scripts</h3>
+                    <p class="test-description">Individual configuration validation for each sub-module.</p>
+                    <div class="test-list">
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-FI-001:</strong> Create G/L account and post journal entry
+                                <p>Post manual journal entry (F-02) with debit/credit to verify G/L posting and document number generation.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-FI-002:</strong> Create vendor and post invoice
+                                <p>Create vendor master (BP), post vendor invoice (FB60), verify sub-ledger and G/L reconciliation.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-FI-003:</strong> Create customer and post billing document
+                                <p>Create customer master (BP), post customer invoice (FB70), verify AR aging report.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-FI-004:</strong> Asset acquisition and depreciation run
+                                <p>Create asset master (AS01), post acquisition (F-90), run depreciation (AFAB), verify postings.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-CO-001:</strong> Post to cost center and run report
+                                <p>Post expense to cost center (FB50), run cost center report (S_ALR_87013611), verify actuals.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>UT-CO-002:</strong> Create and settle internal order
+                                <p>Create order (KO01), post costs, settle to receiver (KO88), verify settlement document.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration Tests -->
+                <div class="test-card">
+                    <h3>Integration Test Scripts</h3>
+                    <p class="test-description">End-to-end process testing across modules.</p>
+                    <div class="test-list">
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>IT-P2P-001:</strong> Full Procure-to-Pay cycle
+                                <p>PR → PO → GR → IV → Payment → Bank reconciliation. Verify all FI/CO postings at each step.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>IT-O2C-001:</strong> Full Order-to-Cash cycle
+                                <p>SO → Delivery → GI → Billing → Incoming Payment. Verify revenue recognition and AR clearing.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>IT-R2R-001:</strong> Month-end closing process
+                                <p>Execute full closing checklist → Generate trial balance → Produce financial statements.</p>
+                            </div>
+                        </div>
+                        <div class="test-item passed">
+                            <span class="test-status">PASS</span>
+                            <div>
+                                <strong>IT-ICP-001:</strong> Intercompany transaction
+                                <p>NT01 sells to NT02 → IC invoice → IC clearing → Verify elimination entries for consolidation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cutover Plan -->
+                <div class="test-card full-width">
+                    <h3>Cutover Plan</h3>
+                    <p class="test-description">Step-by-step go-live transition activities.</p>
+                    <div class="cutover-timeline">
+                        <div class="cutover-phase">
+                            <h4>T-4 Weeks: Preparation</h4>
+                            <ul>
+                                <li>Final data migration rehearsal (3rd mock cutover)</li>
+                                <li>End-user training completion sign-off</li>
+                                <li>Production system access provisioning</li>
+                                <li>Cutover runbook finalization and walk-through</li>
+                            </ul>
+                        </div>
+                        <div class="cutover-phase">
+                            <h4>T-2 Weeks: Final Readiness</h4>
+                            <ul>
+                                <li>Go/No-Go decision meeting with steering committee</li>
+                                <li>Legacy system freeze for data extraction</li>
+                                <li>Communication plan execution (stakeholder emails, training reminders)</li>
+                                <li>Hypercare team roster and escalation paths confirmed</li>
+                            </ul>
+                        </div>
+                        <div class="cutover-phase">
+                            <h4>Go-Live Weekend (T-0)</h4>
+                            <ul>
+                                <li><strong>Day 1 (Friday PM):</strong> Legacy system cutoff, final data extraction</li>
+                                <li><strong>Day 1 (Friday PM):</strong> Load master data — CoA, vendors, customers, assets, cost centers</li>
+                                <li><strong>Day 2 (Saturday):</strong> Load open item balances — AP, AR, G/L, asset balances</li>
+                                <li><strong>Day 2 (Saturday):</strong> Reconciliation — verify all balances match legacy</li>
+                                <li><strong>Day 3 (Sunday):</strong> Smoke testing — key transactions in each module</li>
+                                <li><strong>Day 3 (Sunday):</strong> Go-Live sign-off → System open for productive use</li>
+                            </ul>
+                        </div>
+                        <div class="cutover-phase">
+                            <h4>T+1 to T+4 Weeks: Hypercare</h4>
+                            <ul>
+                                <li>On-site support team at all 3 locations</li>
+                                <li>Daily status calls and issue triage</li>
+                                <li>Priority 1 issues: 2-hour response SLA</li>
+                                <li>First month-end close support with parallel legacy comparison</li>
+                                <li>Knowledge transfer to internal support team</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Migration -->
+                <div class="test-card full-width">
+                    <h3>Data Migration Strategy</h3>
+                    <p class="test-description">Migration approach for master data and transactional data.</p>
+                    <div class="config-table-wrapper">
+                        <table class="config-table">
+                            <thead>
+                                <tr>
+                                    <th>Data Object</th>
+                                    <th>Source</th>
+                                    <th>Migration Tool</th>
+                                    <th>Volume</th>
+                                    <th>Validation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chart of Accounts</td>
+                                    <td>Legacy ERP + Excel mapping</td>
+                                    <td>SAP Migration Cockpit (LTMC)</td>
+                                    <td>~200 accounts</td>
+                                    <td>100% manual review</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendor Master</td>
+                                    <td>Legacy ERP</td>
+                                    <td>SAP Migration Cockpit</td>
+                                    <td>~2,500 vendors</td>
+                                    <td>Sample + duplicate check</td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Master</td>
+                                    <td>Legacy ERP + CRM</td>
+                                    <td>SAP Migration Cockpit</td>
+                                    <td>~4,200 customers</td>
+                                    <td>Sample + duplicate check</td>
+                                </tr>
+                                <tr>
+                                    <td>G/L Opening Balances</td>
+                                    <td>Legacy trial balance</td>
+                                    <td>LSMW / F-02</td>
+                                    <td>~200 line items</td>
+                                    <td>TB reconciliation</td>
+                                </tr>
+                                <tr>
+                                    <td>AP Open Items</td>
+                                    <td>Legacy AP aging</td>
+                                    <td>SAP Migration Cockpit</td>
+                                    <td>~3,800 items</td>
+                                    <td>Balance reconciliation</td>
+                                </tr>
+                                <tr>
+                                    <td>AR Open Items</td>
+                                    <td>Legacy AR aging</td>
+                                    <td>SAP Migration Cockpit</td>
+                                    <td>~5,100 items</td>
+                                    <td>Balance reconciliation</td>
+                                </tr>
+                                <tr>
+                                    <td>Fixed Assets</td>
+                                    <td>Legacy asset register</td>
+                                    <td>SAP Migration Cockpit</td>
+                                    <td>~1,400 assets</td>
+                                    <td>NBV reconciliation per class</td>
+                                </tr>
+                                <tr>
+                                    <td>Cost Centers</td>
+                                    <td>Excel template</td>
+                                    <td>LSMW / KS01 mass</td>
+                                    <td>~50 cost centers</td>
+                                    <td>100% manual review</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About the Consultant</span>
+                <h2>Project Lead</h2>
+                <p>SAP FICO Consultant responsible for end-to-end implementation.</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-avatar">MG</div>
+                    <h3>Mateo Glibo</h3>
+                    <p class="about-title">SAP FICO Consultant</p>
+                    <p class="about-bio">
+                        Experienced SAP Financial Accounting and Controlling consultant with expertise in 
+                        end-to-end S/4HANA implementations. Specialized in enterprise structure design, 
+                        general ledger configuration, accounts payable/receivable, asset accounting, 
+                        cost center accounting, profit center accounting, and financial reporting.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>SAP Modules</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">FI — Financial Accounting</span>
+                                <span class="skill-tag">CO — Controlling</span>
+                                <span class="skill-tag">S/4HANA Finance</span>
+                                <span class="skill-tag">SAP Fiori</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>FI Sub-Modules</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">General Ledger (G/L)</span>
+                                <span class="skill-tag">Accounts Payable (AP)</span>
+                                <span class="skill-tag">Accounts Receivable (AR)</span>
+                                <span class="skill-tag">Asset Accounting (AA)</span>
+                                <span class="skill-tag">Bank Accounting</span>
+                                <span class="skill-tag">Tax Configuration</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>CO Sub-Modules</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Cost Element Accounting</span>
+                                <span class="skill-tag">Cost Center Accounting</span>
+                                <span class="skill-tag">Profit Center Accounting</span>
+                                <span class="skill-tag">Internal Orders</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Implementation Skills</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SAP Activate Methodology</span>
+                                <span class="skill-tag">Business Blueprint</span>
+                                <span class="skill-tag">Data Migration (LTMC/LSMW)</span>
+                                <span class="skill-tag">Cutover Planning</span>
+                                <span class="skill-tag">Testing & UAT</span>
+                                <span class="skill-tag">End-User Training</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="footer-logo">◆ SAP FICO Implementation Portfolio</span>
+                    <p>NovaTech Industries GmbH — SAP S/4HANA Implementation Project</p>
+                    <p class="footer-note">This is a fictional demonstration project created for portfolio purposes.</p>
+                </div>
+                <div class="footer-right">
+                    <p>Designed & Documented by <strong>Mateo Glibo</strong></p>
+                    <p>SAP FICO Consultant</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
