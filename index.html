@@ -27,6 +27,7 @@
                 <li><a href="#co-config" class="nav-link">CO Config</a></li>
                 <li><a href="#processes" class="nav-link">Business Processes</a></li>
                 <li><a href="#testing" class="nav-link">Testing & Go-Live</a></li>
+                <li><a href="#hands-on" class="nav-link">Hands-On</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
             </ul>
         </div>
@@ -1498,6 +1499,282 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hands-On Configuration Section -->
+    <section id="hands-on" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Hands-On Proof</span>
+                <h2>Real-World ECC Configuration</h2>
+                <p>Actual screenshots from SAP ECC sandbox — every configuration step performed hands-on, not just theoretical.</p>
+            </div>
+
+            <!-- Phase 1: Enterprise Structure — COMPLETED -->
+            <h3 class="phase-heading">Phase 1: Enterprise Structure</h3>
+
+            <!-- Configuration Examples Grid -->
+            <div class="config-examples">
+
+                <!-- Task 1A: Define Company (OX15) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 1A — Define Company</div>
+                        <div class="config-example-tcode">T-Code: OX15</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-8.png" alt="SAP ECC Define Company NOTEGR — NovaTech Group">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Define Company — NOTEGR</h3>
+                        <p class="config-example-desc">Created company NOTEGR (NovaTech Group) as the highest organizational unit for consolidated financial statements. Headquarters in Munich, Germany with EUR as group currency.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Define Company</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Enterprise Structure</span>
+                            <span class="config-tag">Consolidation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 1B: Define Company Code NT01 (OX02) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 1B — Define Company Code</div>
+                        <div class="config-example-tcode">T-Code: OX02</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-6.png" alt="SAP ECC Company Code NT01 — Nova Tech Industries GmbH, Germany">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Company Code NT01 — Germany HQ</h3>
+                        <p class="config-example-desc">Defined company code NT01 (Nova Tech Industries GmbH) with Munich headquarters, country DE, EUR currency, and English language. Address: Leopoldstrasse 1, 81379 Munich.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Edit, Copy, Delete, Check Company Code</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Company Code</span>
+                            <span class="config-tag">Germany (DE)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 1B: Define Company Code NT02 (OX02) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 1B — Define Company Code</div>
+                        <div class="config-example-tcode">T-Code: OX02</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-4.png" alt="SAP ECC Company Code NT02 — Nova Tech Industries Inc, USA">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Company Code NT02 — USA</h3>
+                        <p class="config-example-desc">Defined company code NT02 (Nova Tech Industries Inc.) with Washington DC headquarters, country US, USD currency. Address: L'Enfant Plaza SW 475, 20024 Washington.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Edit, Copy, Delete, Check Company Code</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Company Code</span>
+                            <span class="config-tag">USA (US)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 1B: Define Company Code NT03 (OX02) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 1B — Define Company Code</div>
+                        <div class="config-example-tcode">T-Code: OX02</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-2.png" alt="SAP ECC Company Code NT03 — Nova Tech Industries Ltd, UK">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Company Code NT03 — United Kingdom</h3>
+                        <p class="config-example-desc">Defined company code NT03 (Nova Tech Industries Ltd.) with Birmingham headquarters, country GB, GBP currency. Address: Nova Tech Industries 1, B2 4RQ Birmingham.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Edit, Copy, Delete, Check Company Code</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Company Code</span>
+                            <span class="config-tag">UK (GB)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 1C: Assign Company Code to Company (OX16) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 1C — Assign Company Code to Company</div>
+                        <div class="config-example-tcode">T-Code: OX16</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-1.png" alt="SAP ECC Assign Company Codes NT01 NT02 NT03 to Company NOTEGR">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Assign All Company Codes to NOTEGR</h3>
+                        <p class="config-example-desc">Assigned all three company codes (NT01 Munich, NT02 Washington, NT03 Birmingham) to parent company NOTEGR for consolidated financial reporting.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Assignment → Financial Accounting → Assign Company Code to Company</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Assignment</span>
+                            <span class="config-tag">Consolidation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 2: Define Business Areas (OX03) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 2 — Define Business Areas</div>
+                        <div class="config-example-tcode">T-Code: OX03</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-9.png" alt="SAP ECC Define Business Areas — Country-based business areas">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Define Business Areas</h3>
+                        <p class="config-example-desc">Configured business areas for cross-company-code internal reporting by geographic segment, enabling financial statements by business division regardless of legal entity.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Define Business Area</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Business Areas</span>
+                            <span class="config-tag">Cross-Company Reporting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 3: Define Credit Control Area (OB45) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 3 — Define Credit Control Area</div>
+                        <div class="config-example-tcode">T-Code: OB45</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-7.png" alt="SAP ECC Credit Control Area DE — Germany, EUR, SD Update 000018">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Credit Control Area — Germany (DE)</h3>
+                        <p class="config-example-desc">Defined credit control area DE (Credit Control Area - Germany) with EUR currency, SD update group 000018, and fiscal year variant K3 for customer credit limit management.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Financial Accounting → Define Credit Control Area</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-AR</span>
+                            <span class="config-tag">Credit Management</span>
+                            <span class="config-tag">FI-SD Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 4A: Define Plant (OX10) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 4A — Define Plant</div>
+                        <div class="config-example-tcode">T-Code: OX10</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-5.png" alt="SAP ECC Define Plant NT01 — NovaTech01Plant, Germany">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Define Plant NT01 — NovaTech01Plant</h3>
+                        <p class="config-example-desc">Created plant NT01 (NovaTech01Plant) with language key EN and country key DE. Plant is the logistics unit where materials are produced and inventory is valued — critical for FI-MM integration.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Definition → Logistics - General → Define, Copy, Delete, Check Plant</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">Logistics</span>
+                            <span class="config-tag">Plant</span>
+                            <span class="config-tag">FI-MM Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Task 4B: Assign Plant to Company Code (OX18) -->
+                <div class="config-example-card">
+                    <div class="config-example-header">
+                        <div class="config-example-module">Task 4B — Assign Plant to Company Code</div>
+                        <div class="config-example-tcode">T-Code: OX18</div>
+                    </div>
+                    <div class="config-example-image">
+                        <img src="images/phase1/phase1-screenshot-3.png" alt="SAP ECC Assign Plant NT01 to Company Code NT01">
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Assign Plant NT01 to Company Code NT01</h3>
+                        <p class="config-example-desc">Assigned plant NT01 (NovaTech01Plant) to company code NT01 (Nova Tech Industries GmbH). This determines which legal entity receives the plant's inventory and production postings.</p>
+                        <div class="config-example-meta">
+                            <span class="meta-item"><strong>SPRO Path:</strong> Enterprise Structure → Assignment → Logistics - General → Assign Plant to Company Code</span>
+                        </div>
+                        <div class="config-example-tags">
+                            <span class="config-tag">Logistics</span>
+                            <span class="config-tag">Assignment</span>
+                            <span class="config-tag">FI-MM Integration</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Phase 2+ placeholders -->
+            <h3 class="phase-heading phase-upcoming">Phase 2: FI Global Settings — Coming Next</h3>
+
+            <div class="config-examples">
+                <div class="config-example-card config-upcoming">
+                    <div class="config-example-header">
+                        <div class="config-example-module">FI Global Settings</div>
+                        <div class="config-example-tcode">T-Code: OB29</div>
+                    </div>
+                    <div class="config-example-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Screenshot coming soon</p>
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Define Fiscal Year Variant</h3>
+                        <p class="config-example-desc">Fiscal year variant configuration with calendar-aligned posting periods and special periods for year-end closing.</p>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Fiscal Year</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="config-example-card config-upcoming">
+                    <div class="config-example-header">
+                        <div class="config-example-module">FI Global Settings</div>
+                        <div class="config-example-tcode">T-Code: OB52</div>
+                    </div>
+                    <div class="config-example-placeholder">
+                        <div class="placeholder-icon">📷</div>
+                        <p>Screenshot coming soon</p>
+                    </div>
+                    <div class="config-example-details">
+                        <h3>Posting Period Variant & Open/Close Periods</h3>
+                        <p class="config-example-desc">Posting period control for monthly period management — open and close periods for financial postings.</p>
+                        <div class="config-example-tags">
+                            <span class="config-tag">FI-GL</span>
+                            <span class="config-tag">Posting Periods</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 10%"></div>
+                </div>
+                <p class="progress-text">4 of 42 configuration tasks completed — Phase 1 (Enterprise Structure) done</p>
             </div>
         </div>
     </section>
