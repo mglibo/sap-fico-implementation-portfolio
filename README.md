@@ -1,46 +1,25 @@
-# SAP S/4HANA FICO Implementation Portfolio
+# SAP ECC FI/CO Sandbox Portfolio
 
-A comprehensive portfolio website showcasing an end-to-end SAP Financial Accounting (FI) and Controlling (CO) implementation project for a fictional manufacturing company — **NovaTech Industries GmbH**.
+Static portfolio website for a self-initiated SAP ECC FI/CO sandbox project based on a fictional company scenario, NovaTech Industries GmbH.
 
-## Project Overview
+This is not client work and does not claim real implementation ownership, real business results, certificates, or production screenshots. The site is intended to demonstrate SAP FI/CO learning, configuration logic, documentation structure, testing approach, and consulting-style troubleshooting.
 
-This portfolio demonstrates SAP FICO implementation expertise through a realistic project scenario, covering:
+## Current Scope
 
-### Financial Accounting (FI)
-- **General Ledger (G/L)** — Chart of Accounts, account groups, retained earnings
-- **Accounts Payable (AP)** — Vendor master data, payment terms, automatic payment program
-- **Accounts Receivable (AR)** — Customer master data, dunning, credit management
-- **Asset Accounting (AA)** — Asset classes, depreciation areas, depreciation keys
-- **Bank Accounting** — House banks, electronic bank statements, reconciliation
-- **Tax Configuration** — Tax codes, calculation procedures, tax accounts
+- Enterprise structure and FI/CO design examples
+- GL, AP, AR, Asset Accounting, Tax, Bank Accounting, and basic CO coverage
+- Testing templates and support-case thinking for SAP FI/FICO, AMS, and inhouse support roles
+- Transparent evidence-status table showing what is complete, partial, planned, or still to be added
 
-### Controlling (CO)
-- **Cost Element Accounting** — Primary and secondary cost elements
-- **Cost Center Accounting** — Hierarchy, cost centers, assessment cycles
-- **Profit Center Accounting** — Profit centers, segments, dummy profit center
-- **Internal Orders** — Order types, settlement profiles
+## Planned Evidence
 
-### Business Processes
-- **Procure-to-Pay (P2P)** — PR → PO → GR → IV → Payment
-- **Order-to-Cash (O2C)** — SO → Delivery → Billing → Payment
-- **Record-to-Report (R2R)** — Period-end closing, financial statements
-
-### Testing & Go-Live
-- Unit test scripts for each sub-module
-- Integration test scripts for end-to-end processes
-- Data migration strategy
-- Cutover plan with hypercare support
+Future updates will add SAP GUI screenshot evidence for the sandbox examples and a downloadable 2-page recruiter summary PDF.
 
 ## Tech Stack
 
-- HTML5, CSS3, JavaScript (vanilla)
-- Responsive design — works on desktop, tablet, and mobile
-- No dependencies or build tools required
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- No build tools or frameworks
 
-## Getting Started
-
-Simply open `index.html` in a web browser, or deploy to any static hosting service.
-
-## Author
-
-**Mateo Glibo** — SAP FICO Consultant
+Open `index.html` directly in a browser or deploy the folder to any static hosting service.
