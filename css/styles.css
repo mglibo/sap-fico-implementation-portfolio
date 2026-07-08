@@ -327,8 +327,25 @@ a { text-decoration: none; color: inherit; }
     box-shadow: var(--shadow-sm);
 }
 
+.package-note {
+    max-width: 920px;
+    margin: -28px auto 28px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-sm);
+    color: var(--text-light);
+}
+
+.package-note strong {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
 .status-table {
-    min-width: 760px;
+    min-width: 960px;
 }
 
 .status-table td:first-child {
@@ -1660,11 +1677,15 @@ a { text-decoration: none; color: inherit; }
     }
 
     .status-table td:nth-child(2)::before {
-        content: 'Current Status';
+        content: 'Evidence Package';
     }
 
     .status-table td:nth-child(3)::before {
-        content: 'Evidence / Next Step';
+        content: 'Status';
+    }
+
+    .status-table td:nth-child(4)::before {
+        content: 'Planned Proof';
     }
 
     .info-grid {
