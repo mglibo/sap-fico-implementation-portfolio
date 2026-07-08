@@ -9,11 +9,13 @@ This is not client work and does not claim real implementation ownership, real b
 - Enterprise structure and FI/CO design examples
 - GL, AP, AR, Asset Accounting, Tax, Bank Accounting, and basic CO coverage
 - Testing templates and support-case thinking for SAP FI/FICO, AMS, and inhouse support roles
-- Transparent evidence-status table showing what is complete, partial, planned, or still to be added
+- Evidence package roadmap showing each planned SAP ECC sandbox case and the proof it will contain
 
 ## Planned Evidence
 
-Future updates will add SAP GUI screenshot evidence for the sandbox examples and a downloadable 2-page recruiter summary PDF.
+Future updates will add structured evidence packages for each SAP ECC sandbox case. Each package is intended to include the business scenario, SAP transactions used, configuration dependencies, step-by-step screenshots, expected accounting result, table validation, troubleshooting notes, interview talking points, and a short portfolio summary.
+
+A downloadable 2-page recruiter summary PDF is also planned.
 
 ## Tech Stack
 
