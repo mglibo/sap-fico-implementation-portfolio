@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initTabs();
     initAccordion();
+    initClickableRows();
     initScrollAnimations();
     initActiveNavHighlight();
 });
@@ -128,6 +129,42 @@ function initAccordion() {
     if (firstProcess) {
         firstProcess.classList.add('open');
     }
+}
+
+// ============================================
+// Clickable Evidence Rows
+// ============================================
+function initClickableRows() {
+    const openEvidenceTarget = (targetSelector) => {
+        const target = document.querySelector(targetSelector);
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            history.replaceState(null, '', targetSelector);
+        }
+    };
+
+    document.addEventListener('click', event => {
+        const packageLink = event.target.closest('.package-link[href^="#"]');
+        if (packageLink) {
+            event.preventDefault();
+            openEvidenceTarget(packageLink.getAttribute('href'));
+            return;
+        }
+
+        const row = event.target.closest('.clickable-row[data-target]');
+        if (row) {
+            openEvidenceTarget(row.getAttribute('data-target'));
+        }
+    });
+
+    document.querySelectorAll('.clickable-row[data-target]').forEach(row => {
+        row.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openEvidenceTarget(row.getAttribute('data-target'));
+            }
+        });
+    });
 }
 
 // ============================================
