@@ -119,15 +119,149 @@
                     <tbody>
                         <tr><td>Enterprise Structure</td><td>ECC Case 000: Company Code and Global Settings Baseline</td><td>Partial</td><td>OBY6, OB52, chart of accounts, fiscal year variant, posting period evidence</td></tr>
                         <tr><td>Accounts Payable</td><td>ECC Case 001: End-to-End Vendor Payment with F110</td><td>Planned</td><td>XK01 vendor, FB60 invoice, FBL1N open item, F110 proposal, payment run, FB03 payment document, REGUH/REGUP</td></tr>
-                        <tr><td>Accounts Receivable</td><td>ECC Case 002: Customer Invoice and Incoming Payment</td><td>Planned</td><td>Customer master, invoice, open item, incoming payment, clearing</td></tr>
-                        <tr><td>Asset Accounting</td><td>ECC Case 003: Asset Acquisition and Depreciation</td><td>Planned</td><td>Asset class, asset master, acquisition posting, depreciation run</td></tr>
-                        <tr><td>Bank Accounting</td><td>ECC Case 004: House Bank and Bank Statement Process</td><td>Planned</td><td>House bank, bank account, bank statement, clearing</td></tr>
-                        <tr><td>Controlling</td><td>ECC Case 005: Cost Center and Internal Order Posting</td><td>Planned</td><td>Cost center, internal order, expense posting, reporting</td></tr>
-                        <tr><td>Testing</td><td>ECC Case 006: SAP FI Test Script and Evidence Pack</td><td>Planned</td><td>Test script, screenshots, expected results, approval-ready evidence</td></tr>
-                        <tr><td>Support Cases</td><td>ECC Case 007: FI Support Troubleshooting Pack</td><td>Planned</td><td>Issue scenario, analysis steps, root-cause logic, transactions checked, resolution notes, interview talking points</td></tr>
+                        <tr><td>Accounts Payable</td><td>CASE 002: Vendor Master — BioLab Chemicals GmbH</td><td>Complete</td><td>XK01 vendor creation, FI prerequisite setup, reconciliation account 210000, LFA1/LFB1/LFM1 table validation</td></tr>
+                        <tr><td>Accounts Receivable</td><td>ECC Case 003: Customer Invoice and Incoming Payment</td><td>Planned</td><td>Customer master, invoice, open item, incoming payment, clearing</td></tr>
+                        <tr><td>Asset Accounting</td><td>ECC Case 004: Asset Acquisition and Depreciation</td><td>Planned</td><td>Asset class, asset master, acquisition posting, depreciation run</td></tr>
+                        <tr><td>Bank Accounting</td><td>ECC Case 005: House Bank and Bank Statement Process</td><td>Planned</td><td>House bank, bank account, bank statement, clearing</td></tr>
+                        <tr><td>Controlling</td><td>ECC Case 006: Cost Center and Internal Order Posting</td><td>Planned</td><td>Cost center, internal order, expense posting, reporting</td></tr>
+                        <tr><td>Testing</td><td>ECC Case 007: SAP FI Test Script and Evidence Pack</td><td>Planned</td><td>Test script, screenshots, expected results, approval-ready evidence</td></tr>
+                        <tr><td>Support Cases</td><td>ECC Case 008: FI Support Troubleshooting Pack</td><td>Planned</td><td>Issue scenario, analysis steps, root-cause logic, transactions checked, resolution notes, interview talking points</td></tr>
                         <tr><td>Portfolio PDF</td><td>ECC Recruiter Summary Pack</td><td>Planned</td><td>2-page overview of sandbox scope, completed cases, screenshots, validation notes, and SAP FI/FICO role relevance</td></tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE 002 Evidence Package -->
+    <section id="case-002-vendor-master" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Completed Evidence Package</span>
+                <h2>CASE 002 — Vendor Master: BioLab Chemicals GmbH</h2>
+                <p>A Procure-to-Pay vendor master case showing how FI prerequisites were completed before creating and validating a supplier in SAP ECC.</p>
+            </div>
+
+            <div class="evidence-package-card">
+                <div class="case-summary-grid">
+                    <div class="case-summary-item"><span>Business Process</span><strong>Procure-to-Pay</strong></div>
+                    <div class="case-summary-item"><span>Vendor</span><strong>0000100000</strong></div>
+                    <div class="case-summary-item"><span>Company Code</span><strong>NT01</strong></div>
+                    <div class="case-summary-item"><span>Purchasing Org.</span><strong>NT01</strong></div>
+                    <div class="case-summary-item"><span>Chart of Accounts</span><strong>NTCA</strong></div>
+                    <div class="case-summary-item"><span>Recon. Account</span><strong>210000</strong></div>
+                    <div class="case-summary-item"><span>Payment Terms</span><strong>N030</strong></div>
+                    <div class="case-summary-item"><span>Tables Validated</span><strong>LFA1, LFB1, LFM1</strong></div>
+                </div>
+
+                <div class="case-story-grid">
+                    <div class="case-story-block">
+                        <h3>Business Scenario</h3>
+                        <p>NovaTech Germany needed a domestic German supplier for laboratory chemicals. The vendor had to be available for company code NT01 and purchasing organization NT01 so it can later support purchasing, invoice posting and payment processing.</p>
+                    </div>
+                    <div class="case-story-block">
+                        <h3>What This Proves</h3>
+                        <p>The case demonstrates vendor master creation across FI and MM views, plus the ability to identify missing FI configuration before a business process can continue.</p>
+                    </div>
+                </div>
+
+                <div class="case-prerequisites">
+                    <h3>FI Prerequisites Uncovered and Resolved</h3>
+                    <ul>
+                        <li>Chart of accounts creation for NTCA</li>
+                        <li>Chart assignment to company code NT01</li>
+                        <li>G/L account groups for balance sheet and P&L accounts</li>
+                        <li>Retained earnings setup</li>
+                        <li>Field status variant assignment</li>
+                        <li>Vendor reconciliation account 210000</li>
+                    </ul>
+                </div>
+
+                <div class="case-validation-grid">
+                    <div class="validation-card">
+                        <h3>Table Validation</h3>
+                        <table class="config-table compact">
+                            <thead>
+                                <tr><th>Table</th><th>Validation Result</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>LFA1</td><td>Vendor general data exists</td></tr>
+                                <tr><td>LFB1</td><td>Vendor company code data exists for NT01</td></tr>
+                                <tr><td>LFM1</td><td>Vendor purchasing organization data exists for NT01</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="validation-card">
+                        <h3>Interview Talking Point</h3>
+                        <p>I created a vendor master from scratch in SAP ECC and resolved the prerequisite FI configuration gaps before saving the vendor. The final record was validated in LFA1, LFB1 and LFM1, proving the vendor exists at general, company code and purchasing organization levels.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-gallery">
+                <h3>Evidence Gallery</h3>
+                <div class="gallery-grid">
+                    <figure>
+                        <img src="images/case-002/CASE_002_01_XK01_INITIAL_SCREEN_BIOLAB.png" alt="XK01 initial screen for BioLab vendor creation">
+                        <figcaption>XK01 initial vendor creation screen</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_02_OB13_CREATE_CHART_OF_ACCOUNTS_NTCA.png" alt="OB13 create chart of accounts NTCA">
+                        <figcaption>OB13 chart of accounts NTCA</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_03_OBY6_ASSIGN_CHART_OF_ACCOUNTS_TO_COMPANY_CODE_NT01.png" alt="OBY6 assign chart of accounts to company code NT01">
+                        <figcaption>OBY6 chart assignment to NT01</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_04_OBD4_CREATE_GL_ACCOUNT_GROUPS_NTCA.png" alt="OBD4 create GL account groups for NTCA">
+                        <figcaption>OBD4 G/L account groups</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_05_OB53_DEFINE_RETAINED_EARNINGS_ACCOUNT_NTCA.png" alt="OB53 retained earnings account setup for NTCA">
+                        <figcaption>OB53 retained earnings setup</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_06_OBY6_ASSIGN_FIELD_STATUS_VARIANT_0001_TO_NT01.png" alt="OBY6 assign field status variant 0001 to NT01">
+                        <figcaption>OBY6 field status variant</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_07_FS00_CREATE_GL_ACCOUNT_210000_RECONCILIATION_ACCOUNT.png" alt="FS00 create reconciliation account 210000">
+                        <figcaption>FS00 reconciliation account 210000</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_08_FS00_ASSIGN_FIELD_STATUS_GROUP_G001_TO_GL_ACCOUNT_210000.png" alt="FS00 assign field status group G001 to account 210000">
+                        <figcaption>FS00 field status group G001</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_09_FS00_VERIFY_GL_ACCOUNT_210000_CREATED.png" alt="FS00 verify GL account 210000 created">
+                        <figcaption>FS00 verify G/L account</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_11_XK01_ENTER_COMPANY_CODE_PAYMENT_TERMS.png" alt="XK01 company code payment terms N030">
+                        <figcaption>XK01 company code payment terms</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_12_XK01_ENTER_PURCHASING_ORGANIZATION_DATA.png" alt="XK01 purchasing organization data for BioLab">
+                        <figcaption>XK01 purchasing organization data</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_13_XK01_VENDOR_CREATION_SUCCESS.png" alt="XK01 vendor creation success message">
+                        <figcaption>Vendor creation success</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_14_SE16N_VERIFY_VENDOR_MASTER_LFA1.png" alt="SE16N validate vendor master in LFA1">
+                        <figcaption>SE16N LFA1 validation</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_15_SE16N_VERIFY_VENDOR_COMPANY_CODE_LFB1.png" alt="SE16N validate vendor company code data in LFB1">
+                        <figcaption>SE16N LFB1 validation</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/case-002/CASE_002_16_SE16N_VERIFY_VENDOR_PURCHASING_ORGANIZATION_LFM1.png" alt="SE16N validate vendor purchasing organization data in LFM1">
+                        <figcaption>SE16N LFM1 validation</figcaption>
+                    </figure>
+                </div>
             </div>
         </div>
     </section>
