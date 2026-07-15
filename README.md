@@ -1,27 +1,70 @@
 # SAP ECC FI/CO Sandbox Portfolio
 
-Static portfolio website for a self-initiated SAP ECC FI/CO sandbox project based on a fictional company scenario, NovaTech Industries GmbH.
+Interactive SAP ECC FI/CO sandbox portfolio for a self-initiated fictional company scenario. The site presents SAP implementation evidence as reusable case packages rather than a bulk screenshot gallery.
 
-This is not client work and does not claim real implementation ownership, real business results, certificates, or production screenshots. The site is intended to demonstrate SAP FI/CO learning, configuration logic, documentation structure, testing approach, and consulting-style troubleshooting.
+This is not client work and does not claim real implementation ownership, production results, certificates, or production screenshots. Life OS is the source of truth; this website is the presentation layer for selected SAP ECC FI/CO configuration logic, business process explanation, testing evidence, table validation, and support-style problem solving.
 
-## Current Scope
+## Portfolio Model
 
-- Enterprise structure and FI/CO design examples
-- GL, AP, AR, Asset Accounting, Tax, Bank Accounting, and basic CO coverage
-- Testing templates and support-case thinking for SAP FI/FICO, AMS, and inhouse support roles
-- Evidence package roadmap showing each planned SAP ECC sandbox case and the proof it will contain
+Evidence packages are defined in `lib/cases.ts` using a reusable case structure:
 
-## Planned Evidence
+- module, area, status, difficulty, business process, and evidence type filters
+- business context and implementation objective
+- business requirement, solution overview, dependencies, and related cases
+- SAP objects, transactions, configuration objects, and master data
+- implementation timeline from requirement to validation/evidence
+- selected screenshots for that case only
+- table validations and result status
+- lessons learned and interview talking points
 
-Future updates will add structured evidence packages for each SAP ECC sandbox case. Each package is intended to include the business scenario, SAP transactions used, configuration dependencies, step-by-step screenshots, expected accounting result, table validation, troubleshooting notes, interview talking points, and a short portfolio summary.
+The structure is designed to scale to future cases such as vendor invoice, F110 payment, customer invoice, asset accounting, bank accounting, controlling, month-end close, and testing evidence.
 
-A downloadable 2-page recruiter summary PDF is also planned.
+## Current Evidence
+
+- CASE 002: Vendor Master - BioLab Chemicals GmbH
+- Business process: Procure-to-Pay
+- Validated SAP tables: LFA1, LFB1, LFM1
+- Screenshot gallery: stored under `public/images/case-002/`
+- Interactive detail view: business requirement, solution overview, implementation timeline, dependencies, related cases, validations, gallery, lessons, and interview talking point
+
+Planned updates will add more evidence packages and a downloadable 2-page recruiter summary PDF.
 
 ## Tech Stack
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- No build tools or frameworks
+- Next.js
+- React
+- Tailwind CSS
+- shadcn-style UI components
+- Radix Dialog for the screenshot lightbox
+- Docker
 
-Open `index.html` directly in a browser or deploy the folder to any static hosting service.
+## Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000`.
+
+For a production check:
+
+```bash
+npm run build
+npm run start
+```
+
+On PowerShell, set the port before starting if needed:
+
+```powershell
+$env:PORT=3000; npm run start
+```
+
+## Docker
+
+```bash
+docker build -t sap-fico-portfolio .
+docker run --rm -p 3000:3000 sap-fico-portfolio
+```
+
+Open `http://localhost:3000`.
